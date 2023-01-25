@@ -73,7 +73,7 @@ namespace AsyncImageLibrary
                 TextureFormat.RGBA32 : TextureFormat.BGRA32;
             Texture2D texture = new Texture2D(asyncImage.Bitmap.Width, asyncImage.Bitmap.Height, textureFormat, false);
             texture.LoadRawTextureData(asyncImage.Bitmap.GetPixels(), asyncImage.Bitmap.RowBytes * asyncImage.Bitmap.Height);
-            texture.Apply(false, true);
+            texture.Apply(false, false);
             asyncImage.Texture = texture;
             onComplete?.Invoke();
         }
