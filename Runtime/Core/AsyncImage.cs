@@ -87,7 +87,7 @@ namespace AsyncImageLibrary
         /// <param name="shouldGenerateTexture">Generate Texture2D when Bitmap is loaded.</param>
         /// <param name="shouldQueueTextureProcess">Queue Texture Generation Progress in Main Thread without executing.</param>
         /// <param name="readOnlyTexture">Should the resulting Texture2D be read only. Read-only Texture2Ds save memory.</param>
-        public AsyncImage(byte[] buffer, bool shouldGenerateTexture = true, bool shouldQueueTextureProcess = fals, bool readOnlyTexture = true)
+        public AsyncImage(byte[] buffer, bool shouldGenerateTexture = true, bool shouldQueueTextureProcess = false, bool readOnlyTexture = true)
         {
             constructedFromBuffer = true;
             this.buffer = buffer;
