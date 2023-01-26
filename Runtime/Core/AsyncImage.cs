@@ -59,10 +59,10 @@ namespace AsyncImageLibrary
         /// </summary>
         /// <param name="path">Path of Local File</param>
         /// <param name="readOnlyTexture">Should the resulting Texture2D be read-only. Read-only Texture2Ds save memory.</param>
-        public AsyncImage(string path, bool readOnlyTexture = true)
+        public AsyncImage(string path)
         {
             this.path = path;
-            this.readOnlyTexture = readOnlyTexture;
+            this.readOnlyTexture = true;
         }
 
         /// <summary>
